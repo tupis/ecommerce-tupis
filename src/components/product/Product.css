@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 3fr;
+    margin: 100px auto;
+
+    max-width: 1000px;
+    min-width: 320px;
+}
+
+.product-description{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.product-description > h1{
+    font-size: 3em;
+}
+
+.product-description > p {
+    color: rgba(0, 0, 0, 0.493);
+    font-size: 1.2em;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 50px;
+    cursor: pointer;
+    
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.big-images > img{
+    width: 304px;
+    height: 304px;
+    border-radius: 15px;
+}
+
+.small-images{
+    display: flex;
+    padding-top: 5px;
+
+    justify-content: space-between;
+}
+
+.small-images > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.small-images > img:hover{
+    outline: 2px solid #2964b3;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.selected{
+    outline: 2px solid #2964b3;
+    opacity: 0.6;
+}
+
+.scale{
+    position: table;
+    z-index: 5;
+    top: 50;
+    right: 50;
+    transform: translate(100%,20%) scale(1.7);
+    
+}
+
+.hidden{
+    display: none;
+}
+
+#close{
+    transform: translateX(60%);
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.black{
+    background-color: rgba(0, 0, 0, 0.644);
+}
